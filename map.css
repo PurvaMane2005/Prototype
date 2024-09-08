@@ -1,0 +1,31 @@
+.map-container {
+    /*width: 800px; /* Adjust as needed */
+    /*height: 700px; /* Adjust as needed */
+    /*border: 1px solid black;  Border around the map container */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    background-color: white; /* Background color of the SVG */
+    /*border: 2px solid black; Border color of the SVG */
+    margin-left: 250px;
+}
+
+.state {
+    fill: #ccc; /* Default fill color for the states */
+    stroke: #333; /* Border color of the states */
+    stroke-width: 1;
+    transition: fill 0.3s; /* Smooth transition for fill color */
+}
+
+.state:hover {
+    fill: red; /* Fill color on hover */
+    stroke: red;
+}

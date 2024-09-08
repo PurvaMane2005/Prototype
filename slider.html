@@ -1,0 +1,83 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Year Slider with Dynamic Images</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .slider-container {
+        width: 600px; /* Increased width for larger slider container */
+        text-align: center;
+      }
+
+      .slider {
+        width: 100%;
+        height: 20px; /* Increased height for the slider */
+      }
+
+      .value {
+        margin-top: 10px;
+        font-size: 24px; /* Increased font size for value display */
+      }
+
+      .image-container img {
+        width: 100%;
+        max-width: 600px; /* Increased max-width for the image */
+        height: auto;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="image-container">
+        <img src="images/1800.jpg" alt="Image for 1800" id="yearImage" />
+      </div>
+      <input
+        type="range"
+        min="0"
+        max="2"
+        value="0"
+        class="slider"
+        id="yearSlider" />
+      <div class="value">Year: <span id="yearValue">1800</span></div>
+    </div>
+
+    <script>
+      const yearSlider = document.getElementById("yearSlider");
+      const yearOutput = document.getElementById("yearValue");
+      const yearImage = document.getElementById("yearImage");
+
+      // Array of years
+      const years = ["1800", "1900", "2000"];
+
+      // Array of image sources corresponding to each year
+
+      const images = ["Navari.jpg", "Paithani.jpg", "Kurti.jpg"];
+
+      // Set initial year and image
+      yearOutput.textContent = years[yearSlider.value];
+      yearImage.src = images[yearSlider.value];
+      yearImage.alt = `Image for ${years[yearSlider.value]}`;
+
+      // Update the displayed year and image as the slider moves
+      yearSlider.oninput = function () {
+        yearOutput.textContent = years[this.value];
+        yearImage.src = images[this.value];
+        yearImage.alt = `Image for ${years[this.value]}`;
+      };
+    </script>
+  </body>
+</html>

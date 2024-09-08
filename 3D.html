@@ -48,32 +48,13 @@
     <div class="demo">
       <model-viewer
         id="model"
-        src="RobotExpressive.glb"
+        src="tripo_draft_c311573f-1940-4974-8712-39d9c7ae8e2f.glb"
         auto-rotate
         camera-controls
         skybox-image="stadium_01_4k.hdr"
         animation_name="Running"
         autoplay
         ar></model-viewer>
-
-      <div class="btn-container">
-        <button type="button" onclick="stop()">STOP</button>
-        <button type="button" onclick="run()">RUN</button>
-        <button type="button" onclick="wave()">WAVE</button>
-      </div>
     </div>
-
-    <script>
-      var modelViewer = document.getElementById("model");
-      function stop() {
-        modelViewer.animationName = "none";
-      }
-      function run() {
-        modelViewer.animationName = "Running";
-      }
-      function wave() {
-        modelViewer.animationName = "Wave";
-      }
-    </script>
   </body>
 </html>

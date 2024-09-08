@@ -1,0 +1,57 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Instructions</title>
+    <link rel="stylesheet" href="template.css" />
+  </head>
+  <body>
+    <!-- Title Section -->
+    <section id="title-section">
+      <h2>Template Tutorial</h2>
+      <div id="title-input-container">
+        <input type="text" id="title-input" placeholder="Enter title" />
+        <button onclick="updateTitle()">Update Title</button>
+      </div>
+      <label id="title-label"> </label>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section id="ingredients-section">
+      <h2>Materials</h2>
+      <div id="materials-input-container">
+        <input type="text" id="materials-input" placeholder="Enter materials" />
+        <button onclick="updateMaterials()">Update Materials</button>
+      </div>
+      <label id="materials-label"> </label>
+    </section>
+
+    <!-- Instructions Section -->
+    <section id="instructions-section">
+      <h2>Add step-by-step instructions</h2>
+      <input
+        type="text"
+        id="step-description"
+        placeholder="Enter step description" />
+      <input type="file" id="step-image" />
+      <button onclick="addStep()">Add Step</button>
+      <button id="submit-btn" style="display: none" onclick="submitSteps()">
+        Submit
+      </button>
+      <div id="steps-container"></div>
+    </section>
+
+    <!-- Result Section -->
+    <section id="result-section" style="display: none">
+      <h2>Final Result</h2>
+      <h3 id="final-title"></h3>
+      <p id="final-materials"></p>
+      <div id="final-steps-container"></div>
+    </section>
+
+    <script src="template.js"></script>
+  </body>
+</html>

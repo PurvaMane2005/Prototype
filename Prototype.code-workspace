@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Prototype",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Prototype"
+	}
+}
