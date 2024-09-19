@@ -1,0 +1,26 @@
+<model-viewer src="newthali.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+    <button class="Hotspot" slot="hotspot-1" data-position="0.06841972402594321m -0.190921356227708m -0.045882602900680136m" data-normal="0.9995952508715212m 0.0283005870590055m 0.002900208133245126m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Puran Poli</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="0.06705074999355398m 0.08580112595860678m -0.012201204294957413m" data-normal="0.9999452751624689m 0.008344997504669407m -0.006309334109180953m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Shrikhanda</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-0.009663789328688166m 0.0697296653462868m 0.2820569117449858m" data-normal="0.9967274793446536m 0.07475791371206637m 0.030750386284931857m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Papad</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="0.05895377450994688m 0.2937229046895502m 0.2232409220078161m" data-normal="0.41292431422207215m 0.42145726923833454m 0.8073829828095198m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Bhaji</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="0.08794375063118332m 0.3062152784863974m -0.1181978257566495m" data-normal="0.9594313418063701m 0.275836272536511m -0.05835967025945313m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Batata Bhaaji</div>
+    </button><button class="Hotspot" slot="hotspot-6" data-position="0.03213225020707133m 0.12324711818005318m -0.3041290594425145m" data-normal="0.9999993471049825m 0.000917425835193217m -0.000681263125042163m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Amti</div>
+    </button><button class="Hotspot" slot="hotspot-7" data-position="0.07823756581919783m -0.13562487671932616m -0.3479634134459812m" data-normal="0.9552659930927726m 0.11476650250878453m -0.2725720681624955m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Modak</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>

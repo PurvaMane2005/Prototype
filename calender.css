@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calendar-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+  }
+  
+  .calendar {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .month-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .month-nav button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .month-nav button:hover {
+    background-color: #0056b3;
+  }
+  
+  .weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .day {
+    background-color: #f0f0f0;
+    padding: 15px;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .day:hover {
+    background-color: #ddd;
+  }
+  
+  .festival-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .day:hover .festival-list {
+    display: block;
+  }
+  
+  .festival-item {
+    padding: 5px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .festival-item:hover {
+    color: #007BFF;
+    text-decoration: underline;
+  }

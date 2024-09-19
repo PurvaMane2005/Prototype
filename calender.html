@@ -1,0 +1,36 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festival Calendar</title>
+    <link rel="stylesheet" href="calender.css" />
+  </head>
+  <body>
+    <div class="calendar-container">
+      <div class="calendar">
+        <div class="month-nav">
+          <button id="prev-month">&#10094; Previous</button>
+          <h2 id="month-year"></h2>
+          <button id="next-month">Next &#10095;</button>
+        </div>
+        <div class="weekdays">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="days" id="days">
+          <!-- Days will be generated dynamically here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="calender.js"></script>
+  </body>
+</html>
