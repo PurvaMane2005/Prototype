@@ -36,12 +36,31 @@
     font-weight: 700;
 }
 
-.image{
+body{
     width: 100%;
     height: 100%;
     background-size:cover;
-    background-image: url("https://media.istockphoto.com/id/2057794724/photo/hand-weaving-silk-handloom-sarees-saree-with-golden-details-woman-wear-on-festival-ceremony.jpg?s=1024x1024&w=is&k=20&c=Vq0qW8p6H57YvbVlCVK0IBBgcY12ggtZ3GnjYzaguE8=");
+    background-image: url(saree.jpeg)
 }
+
+.links{
+    margin-top: 50px;
+    margin-left: 200px;
+    background-color:#f3a324;
+    width: 250px;
+    border-radius: 20px;
+    height: 350px;
+    padding-top: 15px;
+    padding-right: 40px;
+}
+
+.links ul li{
+    background-color:rgb(255, 120, 29);
+    border-radius: 5px;
+    padding: 3px;
+    
+}
+    
 
 
 
